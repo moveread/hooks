@@ -36,6 +36,7 @@ export function make<Locale extends string>(locale: Locale, ...locales: Locale[]
   return {
     LocaleProvider,
     useLocale,
-    translate
+    translate,
+    LOCALES: [locale, ...locales]
   }
 }
